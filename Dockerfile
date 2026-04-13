@@ -7,13 +7,6 @@ ARG VERSION
 
 # OCI annotations
 LABEL org.opencontainers.image.created="${BUILD_DATE}"
-LABEL org.opencontainers.image.authors="Tim de Pater <code@trafex.nl>"
-LABEL org.opencontainers.image.url="https://github.com/TrafeX/docker-php-nginx"
-LABEL org.opencontainers.image.documentation="https://github.com/TrafeX/docker-php-nginx"
-LABEL org.opencontainers.image.source="https://github.com/TrafeX/docker-php-nginx"
-LABEL org.opencontainers.image.version="${VERSION}"
-LABEL org.opencontainers.image.revision="${VCS_REF}"
-LABEL org.opencontainers.image.vendor="TrafeX"
 LABEL org.opencontainers.image.title="PHP-FPM 8.5 & Nginx on Alpine Linux"
 LABEL org.opencontainers.image.description="Lightweight container with Nginx 1.28 & PHP 8.5 based on Alpine Linux."
 
@@ -41,6 +34,9 @@ RUN apk add --no-cache \
   php85-xml \
   php85-xmlreader \
   php85-xmlwriter \
+  php85-redis \
+  php85-zip \
+  libzip \
   supervisor
 
 # Create alias to php
