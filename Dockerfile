@@ -18,7 +18,6 @@ RUN apk add --no-cache \
   curl \
   nginx \
   php85 \
-  php85-ctype \
   php85-curl \
   php85-dom \
   php85-fileinfo \
@@ -32,7 +31,6 @@ RUN apk add --no-cache \
   php85-openssl \
   php85-phar \
   php85-session \
-  php85-tokenizer \
   php85-xml \
   php85-xmlreader \
   php85-xmlwriter \
