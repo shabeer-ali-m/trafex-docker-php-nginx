@@ -27,6 +27,7 @@ RUN apk add --no-cache \
   php85-intl \
   php85-mbstring \
   php85-mysqli \
+  php85-opcache \
   php85-pdo \
   php85-pdo_mysql \
   php85-openssl \
