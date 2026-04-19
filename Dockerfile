@@ -18,6 +18,7 @@ RUN apk add --no-cache \
   curl \
   nginx \
   php85 \
+  php85-bcmath \
   php85-curl \
   php85-dom \
   php85-fileinfo \
