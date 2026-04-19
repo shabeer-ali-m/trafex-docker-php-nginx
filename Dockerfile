@@ -33,6 +33,7 @@ RUN apk add --no-cache \
   php85-pcntl \
   php85-phar \
   php85-session \
+  php85-sodium \
   php85-xml \
   php85-xmlreader \
   php85-xmlwriter \
