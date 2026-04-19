@@ -45,6 +45,9 @@ RUN apk add --no-cache \
 # Create alias to php
 RUN ln -s /usr/bin/php85 /usr/bin/php
 
+# Install Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
 # Configure nginx - http
 COPY config/nginx.conf /etc/nginx/nginx.conf
 # Configure nginx - default server
